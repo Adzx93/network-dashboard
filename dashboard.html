@@ -1,0 +1,1042 @@
+
+<html>
+<head>
+    <meta http-equiv="refresh" content="60">
+    <title>Network Status Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; color: #333; transition: all 0.3s; }
+        body.dark { background: #121212; color: #f0f0f0; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; transition: all 0.3s; color: inherit; }
+        th { background: #007bff; color: white; }
+        tr:nth-child(even) { background: #f2f2f2; }
+        body.dark tr:nth-child(even) { background: #1e1e1e; }
+
+        /* Status colors */
+        .UP { color: green; font-weight: bold; }
+        .DOWN { color: red; font-weight: bold; }
+
+        /* Dark mode overrides */
+        body.dark td:not(.UP):not(.DOWN) { color: white; }  /* All non-UP/DOWN text white */
+        body.dark .UP { color: #00ff00; }                  /* Bright green for UP */
+        body.dark .DOWN { color: #ff4444; }               /* Bright red for DOWN */
+
+        .toggle-container { margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h2>📊 Network Monitoring Dashboard (Test)</h2>
+    <p>Last updated: 2025-11-13 14:36:09</p>
+    <div class="toggle-container">
+        <label><input type="checkbox" id="darkModeToggle"> Dark Mode</label>
+    </div>
+    <table>
+        <tr>
+            <th>Hostname</th><th>IP</th><th>Status</th><th>Uptime (7d)</th><th>Avg Latency (ms)</th><th>Last Successful Ping</th>
+        </tr>
+
+        <tr>
+            <td>brunningprice-ch76lr.cpe.its-tg.net</td>
+            <td>137.22.190.85</td>
+            <td class="DOWN">❌ DOWN</td>
+            <td>0.0%</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        
+        <tr>
+            <td>brunningprice-pr25sq.cpe.its-tg.net</td>
+            <td>137.22.187.89</td>
+            <td class="DOWN">❌ DOWN</td>
+            <td>0.0%</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        
+        <tr>
+            <td>charlespiton-br87pa.cpe.its-tg.net</td>
+            <td>149.107.68.25</td>
+            <td class="DOWN">❌ DOWN</td>
+            <td>0.0%</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        
+        <tr>
+            <td>wstransportation-bt413uf.cpe.its-tg.net</td>
+            <td>149.107.117.13</td>
+            <td class="DOWN">❌ DOWN</td>
+            <td>0.0%</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        
+        <tr>
+            <td>8skyways-fy43rs.cpe.its-tg.net</td>
+            <td>149.86.86.81</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>50.0</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>airtelafrica-w1k3hu.cpe.its-tg.net</td>
+            <td>149.107.115.9</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>41.5</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>allertongladstoneltd-b112ba.cpe.its-tg.net</td>
+            <td>149.107.65.169</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>59.5</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>apollonia-housedental-ol44ha.cpe.its-tg.net</td>
+            <td>149.106.171.25</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>49.9</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>automotiveceltd-bd49ab.cpe.its-tg.net</td>
+            <td>149.107.115.161</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>49.0</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>barchamtrees-cb75xf.cpe.its-tg.net</td>
+            <td>149.86.66.217</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>44.9</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>boleyrecoveryserv-ig110ds.cpe.its-tg.net</td>
+            <td>92.71.131.25</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>44.0</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>bolneystagecottage-rh175rl.cpe.its-tg.net</td>
+            <td>149.86.72.245</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>45.5</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>bowe-systec-de11ly.cpe.its-tg.net</td>
+            <td>149.107.113.73</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>45.9</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>brevitt-rieker-le169hw.cpe.its-tg.net</td>
+            <td>149.40.98.81</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>45.6</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>brunning-price-bd233ae.cpe.its-tg.net</td>
+            <td>137.22.181.245</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>51.3</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>brunning-price-ch35al.cpe.its-tg.net</td>
+            <td>137.22.180.241</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>51.2</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>brunning-price-ll208pn.cpe.its-tg.net</td>
+            <td>137.22.183.129</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>53.6</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>brunning-price-tf109lq.cpe.its-tg.net</td>
+            <td>137.22.189.49</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>49.4</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>brunning-price-w43pu.cpe.its-tg.net</td>
+            <td>137.22.178.149</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>43.8</td>
+            <td>2025-11-13 14:35:09</td>
+        </tr>
+        
+        <tr>
+            <td>brunningandprice-cw111al.cpe.its-tg.net</td>
+            <td>149.107.76.197</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>55.6</td>
+            <td>2025-11-13 14:35:13</td>
+        </tr>
+        
+        <tr>
+            <td>brunningandprice-kt89bn.cpe.its-tg.net</td>
+            <td>149.86.93.185</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>45.2</td>
+            <td>2025-11-13 14:35:13</td>
+        </tr>
+        
+        <tr>
+            <td>brunningandprice-rg291et.cpe.its-tg.net</td>
+            <td>149.86.66.189</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>47.1</td>
+            <td>2025-11-13 14:35:13</td>
+        </tr>
+        
+        <tr>
+            <td>brunningandpriceltd-wa42sx.cpe.its-tg.net</td>
+            <td>149.40.109.17</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>51.5</td>
+            <td>2025-11-13 14:35:13</td>
+        </tr>
+        
+        <tr>
+            <td>brunningprice-b495nl.cpe.its-tg.net</td>
+            <td>92.71.128.1</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>51.0</td>
+            <td>2025-11-13 14:35:13</td>
+        </tr>
+        
+        <tr>
+            <td>brunningprice-bb79pq.cpe.its-tg.net</td>
+            <td>149.86.82.49</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>55.4</td>
+            <td>2025-11-13 14:35:13</td>
+        </tr>
+        
+        <tr>
+            <td>brunningprice-ct20db.cpe.its-tg.net</td>
+            <td>149.40.96.53</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>45.4</td>
+            <td>2025-11-13 14:35:13</td>
+        </tr>
+        
+        <tr>
+            <td>brunningprice-cw60rz.cpe.its-tg.net</td>
+            <td>149.106.177.201</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>53.8</td>
+            <td>2025-11-13 14:35:13</td>
+        </tr>
+        
+        <tr>
+            <td>brunningprice-m282qt.cpe.its-tg.net</td>
+            <td>149.106.179.113</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>51.2</td>
+            <td>2025-11-13 14:35:13</td>
+        </tr>
+        
+        <tr>
+            <td>brunningprice-rowbarge-rg75sh.cpe.its-tg.net</td>
+            <td>137.22.190.125</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>47.5</td>
+            <td>2025-11-13 14:35:14</td>
+        </tr>
+        
+        <tr>
+            <td>brunningprice-tn30ja.cpe.its-tg.net</td>
+            <td>149.40.100.213</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>46.7</td>
+            <td>2025-11-13 14:35:14</td>
+        </tr>
+        
+        <tr>
+            <td>brunningprice-ub96hj.cpe.its-tg.net</td>
+            <td>149.107.126.249</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>46.8</td>
+            <td>2025-11-13 14:35:14</td>
+        </tr>
+        
+        <tr>
+            <td>cameron-mackintosh-wc1b3rb.cpe.its-tg.net</td>
+            <td>149.106.163.113</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>47.4</td>
+            <td>2025-11-13 14:35:14</td>
+        </tr>
+        
+        <tr>
+            <td>companyofleathersellers-ec3a6ab.cpe.its-tg.net</td>
+            <td>149.107.64.17</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>53.7</td>
+            <td>2025-11-13 14:35:17</td>
+        </tr>
+        
+        <tr>
+            <td>csparkssonsltd-ba69ag.cpe.its-tg.net</td>
+            <td>149.107.110.121</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>54.1</td>
+            <td>2025-11-13 14:35:17</td>
+        </tr>
+        
+        <tr>
+            <td>eurotaxisltd-bs375nh.cpe.its-tg.net</td>
+            <td>149.40.117.201</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>53.3</td>
+            <td>2025-11-13 14:35:18</td>
+        </tr>
+        
+        <tr>
+            <td>gloverpriest-b321ad.cpe.its-tg.net</td>
+            <td>92.71.136.185</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>54.3</td>
+            <td>2025-11-13 14:35:18</td>
+        </tr>
+        
+        <tr>
+            <td>graham-sibbald-fk82qg.cpe.its-tg.net</td>
+            <td>149.107.67.41</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>59.7</td>
+            <td>2025-11-13 14:35:18</td>
+        </tr>
+        
+        <tr>
+            <td>grahamsibbald-DD14QB.cpe.its-tg.net</td>
+            <td>149.107.98.41</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>61.9</td>
+            <td>2025-11-13 14:35:18</td>
+        </tr>
+        
+        <tr>
+            <td>grahamsibbald-g25qy.cpe.its-tg.net</td>
+            <td>92.71.135.157</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>60.1</td>
+            <td>2025-11-13 14:35:18</td>
+        </tr>
+        
+        <tr>
+            <td>grahamsibbald-m21hl.cpe.its-tg.net</td>
+            <td>149.40.101.185</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>55.2</td>
+            <td>2025-11-13 14:35:18</td>
+        </tr>
+        
+        <tr>
+            <td>grahamsibbaldllp-ab101uq.cpe.its-tg.net</td>
+            <td>149.107.109.193</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>66.6</td>
+            <td>2025-11-13 14:35:18</td>
+        </tr>
+        
+        <tr>
+            <td>greensafeit-dy117sy.cpe.its-tg.net</td>
+            <td>137.22.188.25</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>55.9</td>
+            <td>2025-11-13 14:35:18</td>
+        </tr>
+        
+        <tr>
+            <td>grosvenorarms-ch36hj.cpe.its-tg.net</td>
+            <td>149.86.73.249</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>65.7</td>
+            <td>2025-11-13 14:35:18</td>
+        </tr>
+        
+        <tr>
+            <td>huntsfoodgroup-ba46ta.cpe.its-tg.net</td>
+            <td>149.40.121.169</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>53.3</td>
+            <td>2025-11-13 14:35:18</td>
+        </tr>
+        
+        <tr>
+            <td>huntsfoodgroup-dt93nj.cpe.its-tg.net</td>
+            <td>149.40.122.209</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>57.5</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>hurfordsalvicarr-ec1v1jt.cpe.its-tg.net</td>
+            <td>149.107.112.177</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>46.9</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>instituteofdirect-sw1y5ed.cpe.its-tg.net</td>
+            <td>212.82.84.249</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>57.5</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>its-240255188e86-cisco-cpe-c1117-4p_primary.cpe.its-tg.net</td>
+            <td>149.107.97.49</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>61.5</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>its-240255188e86-graham-sibbald-ph15lw.cpe.its-tg.net</td>
+            <td>149.107.97.49</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>63.1</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>its-2411183cf50c-sanawayltd-gu248hu.cpe.its-tg.net</td>
+            <td>149.107.86.65</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>49.0</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>its-2415c548b9c8-jmallinsonlimited-l406jh.cpe.its-tg.net</td>
+            <td>149.107.101.49</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>64.4</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>its-2423928d771b-laurencemcintosh-eh165uy.cpe.its-tg.net</td>
+            <td>149.107.87.193</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>64.6</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>its-2431f20ddfbc-swiftdentallaboratory-bl21hq.cpe.its-tg.net</td>
+            <td>149.107.86.145</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>60.6</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>its-24418dad6cef-huntsfoodgroup-dt93gf.cpe.its-tg.net</td>
+            <td>149.40.116.185</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>57.1</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>its-2449c6a9d34b-brunning-price-ll128ty.cpe.its-tg.net</td>
+            <td>92.71.149.229</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>62.4</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>its-244a0f7bdcb9-halcyondays-st42pq.cpe.its-tg.net</td>
+            <td>149.40.116.121</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>57.1</td>
+            <td>2025-11-13 14:35:22</td>
+        </tr>
+        
+        <tr>
+            <td>its-245e419b8fc2-vernacare-bl12tx.cpe.its-tg.net</td>
+            <td>149.107.87.81</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>53.7</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-246f222fc021-lancastrianestates-la12rx.cpe.its-tg.net</td>
+            <td>149.107.101.97</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>61.3</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-2482b12dd901-graham-sibbald-td69ru.cpe.its-tg.net</td>
+            <td>149.107.97.137</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>59.4</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-2490e2b8e08c-hassankhanholdingslim-wc1b4jp.cpe.its-tg.net</td>
+            <td>149.107.97.169</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>43.3</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-249beba6bf04-nuserveltd-rh109pu.cpe.its-tg.net</td>
+            <td>149.107.118.185</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>61.2</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-24a1f1086ccb-gloverpriestsolicitor-le167qu.cpe.its-tg.net</td>
+            <td>92.71.145.9</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>45.9</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-24de815f859d-shotter-byersequineve-rh55rr.cpe.its-tg.net</td>
+            <td>92.71.148.193</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>49.0</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-24e2e20c68f5-smithbros-webb-b496ex.cpe.its-tg.net</td>
+            <td>149.107.101.241</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>51.7</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-24e9c55c2409-hultaforsgroup-hd94ds.cpe.its-tg.net</td>
+            <td>149.107.99.241</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>55.1</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-24f5750565fe-grahamandsibbaldllp-fk11ll.cpe.its-tg.net</td>
+            <td>149.107.99.33</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>59.3</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-250436d0ffc5-moduflex-bs110yb.cpe.its-tg.net</td>
+            <td>92.71.146.241</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>56.5</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-250602bc4090-wstransportation-mk443ap.cpe.its-tg.net</td>
+            <td>92.71.148.181</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>49.1</td>
+            <td>2025-11-13 14:35:26</td>
+        </tr>
+        
+        <tr>
+            <td>its-251158e31faa.cpe.its-tg.net</td>
+            <td>92.71.141.17</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>52.0</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-251284b5787d-acbinnsltd-nn143dg.cpe.its-tg.net</td>
+            <td>92.71.148.201</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>58.1</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-2519e5078caf.cpe.its-tg.net</td>
+            <td>92.71.153.33</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>52.2</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-25510ccc1b70-gloverpriest-nn81bs.cpe.its-tg.net</td>
+            <td>92.71.150.141</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>51.5</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-256d30c85155.cpe.its-tg.net</td>
+            <td>92.71.141.81</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>47.1</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-25702b16b201-powerday-sw97dt.cpe.its-tg.net</td>
+            <td>92.71.149.185</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>46.1</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-25a55aec68b8.cpe.its-tg.net</td>
+            <td>92.71.153.61</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>57.7</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-25a645673ecf.cpe.its-tg.net</td>
+            <td>195.21.82.33</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>52.2</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-25c046c9f04b.cpe.its-tg.net</td>
+            <td>92.71.152.221</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>49.7</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-25cb7002592c-cw60eu.cpe.its-tg.net</td>
+            <td>92.71.137.137</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>52.7</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-25f7446adb3f-moduflex-bs118dx.cpe.its-tg.net</td>
+            <td>92.71.147.105</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>47.7</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-25f8d8e67926-gloverpriest-b147dy.cpe.its-tg.net</td>
+            <td>92.71.150.29</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>48.7</td>
+            <td>2025-11-13 14:35:30</td>
+        </tr>
+        
+        <tr>
+            <td>its-25fa06a1e34e-optimumoilsltd-nr66nn.cpe.its-tg.net</td>
+            <td>92.71.149.249</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>54.1</td>
+            <td>2025-11-13 14:35:33</td>
+        </tr>
+        
+        <tr>
+            <td>jb-amss-ltd-cf336nu.cpe.its-tg.net</td>
+            <td>185.127.193.41</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>51.9</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>logmoor-b130pt.cpe.its-tg.net</td>
+            <td>149.40.117.129</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>51.0</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>mainmansupplies-b647bj.cpe.its-tg.net</td>
+            <td>149.86.68.73</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>50.5</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>mbheating-wn23dw.cpe.its-tg.net</td>
+            <td>149.86.94.177</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>54.7</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>mitsubishi-eh497lr.cpe.its-tg.net</td>
+            <td>149.40.103.81</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>59.8</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>nicklintransit-ws107su.cpe.its-tg.net</td>
+            <td>137.22.168.121</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>50.3</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>nshiltd-pe377xd.cpe.its-tg.net</td>
+            <td>149.107.117.153</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>56.4</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>oltecgrouptrading-wn23bu.cpe.its-tg.net</td>
+            <td>149.40.106.241</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>49.8</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>parkerplantltd-le46gh.cpe.its-tg.net</td>
+            <td>149.86.68.153</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>45.9</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>perkcompany-b461hg.cpe.its-tg.net</td>
+            <td>149.106.182.81</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>51.3</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>planthire-wa119uy.cpe.its-tg.net</td>
+            <td>92.71.140.57</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>49.9</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>portmandental-eh24ba.cpe.its-tg.net</td>
+            <td>149.106.176.209</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>54.2</td>
+            <td>2025-11-13 14:35:34</td>
+        </tr>
+        
+        <tr>
+            <td>portmandentalcare-dn402eu.cpe.its-tg.net</td>
+            <td>149.106.178.1</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>46.9</td>
+            <td>2025-11-13 14:35:37</td>
+        </tr>
+        
+        <tr>
+            <td>portmandentalcareltd-le159rl.cpe.its-tg.net</td>
+            <td>149.106.179.65</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>46.6</td>
+            <td>2025-11-13 14:35:37</td>
+        </tr>
+        
+        <tr>
+            <td>qcateringltd-me103bf.cpe.its-tg.net</td>
+            <td>149.86.71.137</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>46.3</td>
+            <td>2025-11-13 14:35:37</td>
+        </tr>
+        
+        <tr>
+            <td>rickshiels-m501bb.cpe.its-tg.net</td>
+            <td>92.71.133.221</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>57.5</td>
+            <td>2025-11-13 14:35:38</td>
+        </tr>
+        
+        <tr>
+            <td>swiftdentallab-bl21hq.cpe.its-tg.net</td>
+            <td>149.107.65.217</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>56.2</td>
+            <td>2025-11-13 14:35:38</td>
+        </tr>
+        
+        <tr>
+            <td>tealproducts-gl208nb.cpe.its-tg.net</td>
+            <td>92.71.132.241</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>59.9</td>
+            <td>2025-11-13 14:35:38</td>
+        </tr>
+        
+        <tr>
+            <td>telatechnology-b920ha.cpe.its-tg.net</td>
+            <td>149.86.65.241</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>40.3</td>
+            <td>2025-11-13 14:35:38</td>
+        </tr>
+        
+        <tr>
+            <td>the-roebuck-w41pu.cpe.its-tg.net</td>
+            <td>137.22.178.73</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>47.2</td>
+            <td>2025-11-13 14:35:38</td>
+        </tr>
+        
+        <tr>
+            <td>transworld-ss131et.cpe.its-tg.net</td>
+            <td>185.127.193.17</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>48.7</td>
+            <td>2025-11-13 14:35:38</td>
+        </tr>
+        
+        <tr>
+            <td>ucd-ng220pq.cpe.its-tg.net</td>
+            <td>137.22.187.169</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>52.9</td>
+            <td>2025-11-13 14:35:39</td>
+        </tr>
+        
+        <tr>
+            <td>vernacare-np122yn.cpe.its-tg.net</td>
+            <td>92.71.134.177</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>56.4</td>
+            <td>2025-11-13 14:35:39</td>
+        </tr>
+        
+        <tr>
+            <td>vernacareltd-pr77nb.cpe.its-tg.net</td>
+            <td>149.107.78.177</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>54.1</td>
+            <td>2025-11-13 14:35:39</td>
+        </tr>
+        
+        <tr>
+            <td>ws-transport-pe132rj.cpe.its-tg.net</td>
+            <td>185.127.194.249</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>59.0</td>
+            <td>2025-11-13 14:35:39</td>
+        </tr>
+        
+        <tr>
+            <td>wstransport-cv83az.cpe.its-tg.net</td>
+            <td>149.86.92.17</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>55.2</td>
+            <td>2025-11-13 14:35:39</td>
+        </tr>
+        
+        <tr>
+            <td>wstransport-dn418dy.cpe.its-tg.net</td>
+            <td>185.20.129.145</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>56.6</td>
+            <td>2025-11-13 14:35:39</td>
+        </tr>
+        
+        <tr>
+            <td>wstransportationthirsk-yo73jn.cpe.its-tg.net</td>
+            <td>185.20.129.169</td>
+            <td class="UP">✅ UP</td>
+            <td>100.0%</td>
+            <td>57.1</td>
+            <td>2025-11-13 14:35:41</td>
+        </tr>
+        
+</table>
+<script>
+const toggle = document.getElementById('darkModeToggle');
+const body = document.body;
+
+// Initialize dark mode from localStorage
+if(localStorage.getItem('darkMode') === 'true') {
+    body.classList.add('dark');
+    toggle.checked = true;
+}
+
+// Toggle dark mode
+toggle.addEventListener('change', () => {
+    if(toggle.checked) {
+        body.classList.add('dark');
+        localStorage.setItem('darkMode','true');
+    } else {
+        body.classList.remove('dark');
+        localStorage.setItem('darkMode','false');
+    }
+});
+</script>
+</body>
+</html>
